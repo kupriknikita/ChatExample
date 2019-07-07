@@ -12,6 +12,7 @@
 		A8DF0B5E22D24AE3000C389E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DF0B5C22D24AE3000C389E /* Main.storyboard */; };
 		A8DF0B6022D24AE4000C389E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DF0B5F22D24AE4000C389E /* Assets.xcassets */; };
 		A8DF0B6322D24AE4000C389E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DF0B6122D24AE4000C389E /* LaunchScreen.storyboard */; };
+		A8DF0B6B22D24F30000C389E /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DF0B6A22D24F30000C389E /* ChatMessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A8DF0B5F22D24AE4000C389E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8DF0B6222D24AE4000C389E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8DF0B6422D24AE4000C389E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8DF0B6A22D24F30000C389E /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A8DF0B5F22D24AE4000C389E /* Assets.xcassets */,
 				A8DF0B6122D24AE4000C389E /* LaunchScreen.storyboard */,
 				A8DF0B6422D24AE4000C389E /* Info.plist */,
+				A8DF0B6A22D24F30000C389E /* ChatMessageCell.swift */,
 			);
 			path = GroupedMessages;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DF0B6B22D24F30000C389E /* ChatMessageCell.swift in Sources */,
 				A8DF0B5B22D24AE3000C389E /* ViewController.swift in Sources */,
 				A8DF0B5922D24AE3000C389E /* AppDelegate.swift in Sources */,
 			);
