@@ -18,7 +18,7 @@ class ChatMessageCell: UITableViewCell {
     
     var chatMessage: ChatMessage! {
         didSet {
-            bubblebackgroundView.backgroundColor = chatMessage.isIncoming ? .white : .darkGray
+            bubblebackgroundView.backgroundColor = chatMessage.isIncoming ? .white : #colorLiteral(red: 0.1500483059, green: 0.6442338198, blue: 0.32487326, alpha: 1)
             messageLabel.textColor = chatMessage.isIncoming ? .black : .white
             messageLabel.text = chatMessage.text
             
@@ -37,13 +37,12 @@ class ChatMessageCell: UITableViewCell {
         
         backgroundColor = .clear
         
-        bubblebackgroundView.backgroundColor = .red
+        //bubblebackgroundView.backgroundColor = .blue
         bubblebackgroundView.layer.cornerRadius = 12
         bubblebackgroundView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(bubblebackgroundView)
         
         addSubview(messageLabel)
-        //messageLabel.backgroundColor = .green
         messageLabel.text = "A beautiful activity indicator and modal alert written in Swift (originally developed for my app DoodleDoodle) Using blur effects, translucency, flat and bold design - all iOS 8 latest and greatest"
         messageLabel.numberOfLines = 0
         
@@ -51,22 +50,22 @@ class ChatMessageCell: UITableViewCell {
         
         // MARK: Contrsraints for our label
         let constraints = [
-            messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 32),
-            messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -32),
+            messageLabel.topAnchor.constraint(equalTo: topAnchor, constant: 15),
+            messageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -15),
             messageLabel.widthAnchor.constraint(lessThanOrEqualToConstant: 250),
             
-            bubblebackgroundView.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -16),
-            bubblebackgroundView.leadingAnchor.constraint(equalTo: messageLabel.leadingAnchor, constant: -16),
-            bubblebackgroundView.bottomAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 16),
-            bubblebackgroundView.trailingAnchor.constraint(equalTo: messageLabel.trailingAnchor, constant: 16)
+            bubblebackgroundView.topAnchor.constraint(equalTo: messageLabel.topAnchor, constant: -10),
+            bubblebackgroundView.leadingAnchor.constraint(equalTo: messageLabel.leadingAnchor, constant: -10),
+            bubblebackgroundView.bottomAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: 10),
+            bubblebackgroundView.trailingAnchor.constraint(equalTo: messageLabel.trailingAnchor, constant: 10)
         ]
         
         NSLayoutConstraint.activate(constraints)
         
-        leadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32)
+        leadingConstraint = messageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 15)
         leadingConstraint.isActive = false
         
-        trailingConstraint = messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32)
+        trailingConstraint = messageLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
         trailingConstraint.isActive = true
         
     }
